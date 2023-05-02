@@ -1,0 +1,36 @@
+:root {
+    --body-font: "Bai Jamjuree", sans-serif;
+	--h1-size: 70px;
+	--h1-height: 4rem;
+	--h2-size: 60px;
+	--h2-height: 3.5rem;
+	--h3-size: 20px;
+	--h4-size: 32px;
+	--h5-size: 28px;
+	--h6-size: 22px;
+	--subtitle-size: 17px;
+	--subtitle-height: 26px;
+	--p-size: 18px;
+	--p-height: 26px;
+	--secondary-text-size: 14px;
+	--secondary-text-height: 18px;
+	--button-size: 16px;
+
+	/* SPACING VARIABLES */
+	--spacing-sm: 8px;
+	--spacing-md: 16px;
+	--spacing-lg: 32px;
+	--spacing-xl: 64px;
+	--standard-width: 1440px;
+	--section-width: 1144px;
+
+
+/* Primary  */
+--Strong-Cyan: hsl(171, 66%, 44%)
+--Light-Blue: hsl(233, 100%, 69%)
+
+/* Neutral */
+--Dark-Grayish-Blue: hsl(210, 10%, 33%)
+--Grayish-Blue: hsl(201, 11%, 66%)
+}
+
