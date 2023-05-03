@@ -1,6 +1,6 @@
 :root {
-    --body-font: "Bai Jamjuree", sans-serif;
-    --heading-font: "Bai Jamjuree", sans-serif
+	--body-font: "Bai Jamjuree", sans-serif;
+	--heading-font: "Bai Jamjuree", sans-serif;
 	--h1-size: 70px;
 	--h1-height: 4rem;
 	--h2-size: 60px;
@@ -25,13 +25,113 @@
 	--standard-width: 1440px;
 	--section-width: 1144px;
 
+	/* Primary  */
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
 
-/* Primary  */
---Strong-Cyan: hsl(171, 66%, 44%)
---Light-Blue: hsl(233, 100%, 69%)
-
-/* Neutral */
---Dark-Grayish-Blue: hsl(210, 10%, 33%)
---Grayish-Blue: hsl(201, 11%, 66%)
+	/* Neutral */
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
 }
 
+/* Layout Styles  */
+.section-container {
+	width: 100%;
+	max-width: var(--section-width);
+}
+
+.two-column {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+}
+
+.two-column > .col-left {
+	width: 55%;
+	box-sizing: border-box;
+	padding: 0 var(--spacing-md) 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+
+.two-column > .col-right {
+	width: 45%;
+	box-sizing: border-box;
+	padding: 0 0 0 var(--spacing-md);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+	height: 50px;
+	margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+	font-family: var(--heading-font);
+	font-weight: 500;
+	font-size: var(--h6-size);
+	margin: 0;
+	width: 100%;
+}
+
+h1 {
+	color: var(--dark-grayish-blue);
+	font-family: var(--heading-font);
+	font-weight: 600;
+	font-size: var(--h1-size);
+	margin: var(--spacing-md) 0;
+	width: 100%;
+	letter-spacing: 2px;
+	line-height: var(--h1-height);
+}
+
+h2 {
+	font-family: var(--heading-font);
+	font-weight: 400;
+	font-size: var(--h2-size);
+	margin: 0;
+	width: 100%;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-family: var(--heading-font);
+	font-weight: 400;
+	font-size: var(--h3-size);
+	margin: 0;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Karla, sans-serif;
+	font-size: var(--p-size);
+	height: 100vh;
+	margin: 0 auto;
+	max-width: var(--standard-width);
+}
+
+main {
+	width: 100%;
+}
