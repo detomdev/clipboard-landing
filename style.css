@@ -45,7 +45,7 @@
 	width: 80%;
 	margin: var(--spacing-xl) auto var(--spacing-xl) auto;
 	padding: 0 var(--spacing-xl) 0 var(--spacing-xl);
-	border: 1px solid purple;
+	/* border: 1px solid purple; */
 }
 
 .one-column > p {
@@ -59,7 +59,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
 
 .two-column > .col-left {
@@ -69,7 +69,7 @@
 	flex-direction: column;
 	align-items: start;
 	justify-content: start;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .two-column > .col-right {
@@ -79,7 +79,7 @@
 	flex-direction: column;
 	align-items: start;
 	justify-content: space-between;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .card {
@@ -88,7 +88,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	padding: var(--spacing-sm) var(--spacing-md) 0 var(--spacing-md);
-	border: 1px solid orange;
+	/* border: 1px solid orange; */
 }
 
 .card .workflow-icon {
@@ -107,6 +107,20 @@
 .card .secondary-text {
 	text-align: center;
 	font-size: var(--secondary-text-size);
+}
+
+.footer-section-container {
+	width: 100%;
+	max-width: var(--section-width);
+}
+
+.footer-two-column {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid blue;
 }
 
 /* General styles */
@@ -137,11 +151,11 @@ main {
 
 footer {
 	background-color: rgb(223, 222, 222);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	width: 100%;
-	padding: var(--spacing-lg) var(--spacing-lg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
@@ -194,7 +208,29 @@ h3 {
 	cursor: pointer;
 }
 
+.Mac {
+	font-family: var(--body-font);
+	font-size: var(--button-size);
+	letter-spacing: 1.25px;
+	font-weight: 600;
+	border: 1px solid var(--white);
+	border-radius: 40px;
+	background-color: var(--light-blue);
+	color: var(--white);
+	padding: var(--spacing-md) var(--spacing-lg);
+	margin: var(--spacing-xl) var(--spacing-sm);
+	transition: all 0.15s ease;
+}
+
 /* HERO SECTION */
+main {
+	background-image: url("images/bg-header-desktop.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-x: right;
+	background-position-y: 0px;
+}
+
 .hero-section .hero-logo {
 	margin: 0 0 var(--spacing-lg) 0;
 }
@@ -251,7 +287,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid brown;
+	/* border: 1px solid brown; */
 	margin: calc(var(--spacing-xl) * 2) 0;
 }
 
@@ -259,35 +295,57 @@ p {
 .download > .one-column {
 	margin-bottom: var(--spacing-lg);
 }
+
 .download > .primary-button {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	margin-top: 0;
 }
 
 /* FOOTER SECTION */
-footer .two-column {
-	width: 80%;
+.footer-section .footer-section-container {
+	padding: var(--spacing-lg) 0;
+	display: flex;
+}
+
+.footer-section .col {
+	width: 20%;
+}
+
+.col-1,
+.col-5 {
+	display: flex;
+	align-items: center;
+}
+
+.col-5 {
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.col-5 .social-logos {
+	width: 100%;
+	display: flex;
+	/* border: 1px solid darkmagenta; */
+}
+
+.social-logos img {
+	padding-left: var(--spacing-lg);
 }
 
 footer .footer-logo {
-	height: auto;
-	width: 50px;
-	border: 1px solid black;
+	height: 45px;
+	width: 45px;
+	margin-right: calc(var(--spacing-xl) * 2);
+	/* border: 1px solid black; */
 }
 
 footer ul {
 	list-style: none;
-	border: 1px solid black;
+	text-align: left;
+	/* border: 1px solid black; */
 }
 
-footer .col-left {
-	display: flex;
-	flex: row;
-}
-
-footer .col-right {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid black;
+footer ul li {
+	margin: 0 0 var(--spacing-sm) 0;
 }
