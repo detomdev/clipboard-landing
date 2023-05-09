@@ -1,7 +1,7 @@
 :root {
 	--body-font: "Bai Jamjuree", sans-serif;
 	--heading-font: "Bai Jamjuree", sans-serif;
-	--h1-size: 40px;
+	--h1-size: 42px;
 	--h1-height: 4rem;
 	--h2-size: 34px;
 	--h2-height: 3.5rem;
@@ -214,7 +214,6 @@ h3 {
 .Mac {
 	background-color: var(--light-blue);
 	border: 1px solid var(--light-blue);
-
 	color: var(--white);
 	box-shadow: 0px 14px 22px 0px rgba(97, 115, 255, 0.3);
 	transition: all 0.15s ease;
@@ -270,13 +269,13 @@ main {
 /* SUPERCHARGE CARD SECTION */
 .section-container .card-container {
 	display: flex;
-	margin: var(--spacing-xl) 0;
+	margin: calc(var(--spacing-xl) * 1.5) 0;
 }
 
 .section-container .card-container .card {
 	width: 33%;
-	/* padding: 0 var(--spacing-sm) 0 0; */
-	/* margin: 0 var(--spacing-md) 0 0; */
+	padding: 0 var(--spacing-md) 0 var(--spacing-md);
+	margin: 0 var(--spacing-md) 0 0;
 	text-align: center;
 }
 
@@ -295,12 +294,12 @@ main {
 
 /* DOWNLOAD SECTION */
 .download > .one-column {
-	margin-bottom: var(--spacing-lg);
+	margin-bottom: var(--spacing-xl);
 }
 
 .download > .primary-button {
 	/* border: 1px solid green; */
-	margin-top: 0;
+	margin: v0 var(--spacing-sm);
 }
 
 /* FOOTER SECTION */
@@ -332,7 +331,9 @@ main {
 }
 
 .social-logos img {
-	padding-left: var(--spacing-lg);
+	padding-left: var(--spacing-md);
+	width: auto;
+	height: 20px;
 }
 
 footer .footer-logo {
