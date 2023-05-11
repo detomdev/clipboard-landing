@@ -39,6 +39,7 @@
 .section-container {
 	width: 100%;
 	max-width: var(--section-width);
+	margin: 0 auto;
 }
 
 .one-column {
@@ -59,12 +60,11 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 115px;
 	/* border: 1px solid blue; */
 }
 
 .two-column > .col-left {
-	max-width: 50%;
+	width: 50%;
 	padding: 0 var(--spacing-md) 0 0;
 	display: flex;
 	flex-direction: column;
@@ -74,7 +74,7 @@
 }
 
 .two-column > .col-right {
-	max-width: 50%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -247,23 +247,28 @@ main {
 	padding: 0 0 var(--spacing-md) 0;
 }
 
+.features-section .section-container .two-column .col-right {
+	margin-left: calc(var(--spacing-xl) * 1.5);
+}
+
 .features-section .section-container .two-column,
 .col-right p {
 	text-align: left;
 	line-height: var(--p-height);
-	padding: 0 0 var(--spacing-lg) 0;
+	padding: 0 var(--spacing-md) var(--spacing-xl) 0;
 }
 
 .features-section .two-column {
 	margin: var(--spacing-xl) 0;
+	/* border: 1px solid red; */
 }
 
-.features-section .two-column .imac-image {
+.col-left .imac-image {
+	position: relative;
 	width: auto;
 	height: 100%;
-	position: relative;
 	left: -230px;
-	/* border: 1px solid black; */
+	border: 2px solid black;
 }
 
 /* SUPERCHARGE CARD SECTION */
@@ -299,7 +304,7 @@ main {
 
 .download > .primary-button {
 	/* border: 1px solid green; */
-	margin: v0 var(--spacing-sm);
+	margin: var(--spacing-sm);
 }
 
 /* FOOTER SECTION */
@@ -351,4 +356,129 @@ footer ul {
 
 footer ul li {
 	margin: 0 0 var(--spacing-sm) 0;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+	body {
+		margin: var(--spacing-xl) var(--spacing-sm);
+		padding: var(--spacing-sm);
+		width: 100%;
+	}
+
+	main {
+		width: 100%;
+		margin: var(--spacing-md);
+		padding: var(--spacing-md) var(--spacing-md);
+	}
+
+	footer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.one-column {
+		width: 100%;
+		margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
+		padding: 0 var(--spacing-lg);
+		/* border: 1px solid purple; */
+	}
+
+	.two-column {
+		flex-direction: column;
+	}
+
+	h1 {
+		margin: var(--spacing-sm) 0;
+		line-height: var(--h2-height);
+	}
+
+	.primary-button {
+		padding: var(--spacing-md) var(--spacing-lg);
+		margin: var(--spacing-md) 0;
+		width: 100%;
+	}
+
+	.hero-section p {
+		padding: 0 var(--spacing-sm) var(--spacing-xl) var(--spacing-sm);
+	}
+
+	.hero-section .hero-logo {
+		margin: var(--spacing-xl) 0;
+	}
+
+	/* FEATURES SECTION */
+	.features-section {
+		width: 100%;
+		margin: var(--spacing-xl) 0;
+	}
+
+	.features-section .section-container .two-column {
+		padding-right: 0;
+	}
+
+	.features-section .section-container .two-column .col-left .imac-image {
+		width: 100%;
+		position: initial;
+		height: auto;
+	}
+
+	.features-section .section-container .two-column .col-right {
+		width: 100%;
+		margin: 0 0 var(--spacing-md) 0;
+		padding-right: 0;
+		border: 1px solid green;
+	}
+
+	.features-section .two-column .col-right h3,
+	p {
+		text-align: center;
+	}
+
+	/* SUPERCHARGE SECTION */
+
+	.section-container .card-container {
+		flex-direction: column;
+		margin: var(--spacing-xl) 0;
+	}
+	.section-container .card-container .card {
+		width: 100%;
+	}
+	.section-container .image-devices {
+		max-width: 100%;
+		height: auto;
+		margin: var(--spacing-xl) 0;
+	}
+
+	.card-container .card .workflow-icon {
+		margin: var(--spacing-xl) 0;
+	}
+
+	.card-container .card .secondary-text {
+		margin-bottom: var(--spacing-lg);
+		padding: 0 var(--spacing-xl);
+	}
+
+	.partners-section .partners {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: var(--spacing-xl);
+	}
+
+	.partners-section .partners img {
+		margin-bottom: var(--spacing-xl);
+	}
+
+	/* .download .Mac {
+		margin: var(--spacing-lg) 0;
+	} */
+
+	.download .primary-button {
+		padding: var(--spacing-md) var(--spacing-lg);
+		margin: var(--spacing-md) 0;
+		width: 100%;
+	}
 }
