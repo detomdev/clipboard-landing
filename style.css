@@ -368,12 +368,11 @@ footer ul li {
 
 	main {
 		width: 100%;
-		margin: var(--spacing-md);
-		padding: var(--spacing-md) var(--spacing-md);
+		padding: var(--spacing-md) var(--spacing-lg);
 	}
 
-	footer {
-		width: 100%;
+	.footer-section {
+		/* width: 100%; */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -382,17 +381,22 @@ footer ul li {
 
 	.one-column {
 		width: 100%;
-		margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
-		padding: 0 var(--spacing-lg);
+		margin: var(--spacing-sm);
+		padding: 0 var(--spacing-sm);
 		/* border: 1px solid purple; */
 	}
-
+	.one-column,
+	p {
+		padding: 0 var(--spacing-md);
+	}
 	.two-column {
 		flex-direction: column;
 	}
 
 	h1 {
-		margin: var(--spacing-sm) 0;
+		font-size: var(--h2-size);
+		margin: 0;
+		padding: var(--spacing-md) var(--spacing-md);
 		line-height: var(--h2-height);
 	}
 
@@ -472,13 +476,30 @@ footer ul li {
 		margin-bottom: var(--spacing-xl);
 	}
 
-	/* .download .Mac {
-		margin: var(--spacing-lg) 0;
-	} */
+	.download {
+		margin: 0 0 var(--spacing-xl) 0;
+	}
 
 	.download .primary-button {
 		padding: var(--spacing-md) var(--spacing-lg);
 		margin: var(--spacing-md) 0;
 		width: 100%;
+	}
+	/* FOOTER SECTION */
+	.footer-section-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 var(--spacing-xl);
+	}
+	.footer .col ul,
+	li {
+		text-align: center;
+		margin-bottom: var(--spacing-lg);
+	}
+
+	.footer-section .col-1 .footer-logo {
+		margin-right: 0;
+		margin-bottom: var(--spacing-lg);
 	}
 }
