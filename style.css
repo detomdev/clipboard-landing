@@ -39,7 +39,6 @@
 .section-container {
 	width: 100%;
 	max-width: var(--section-width);
-	margin: 0 auto;
 }
 
 .one-column {
@@ -60,6 +59,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	gap: calc(var(--spacing-xl) * 2);
 	/* border: 1px solid blue; */
 }
 
@@ -136,7 +136,7 @@ body {
 	height: 100vh;
 	margin: var(--spacing-xl) auto;
 	padding: var(--spacing-xl);
-	max-width: var(--standard-width);
+	width: var(--standard-width);
 	text-align: center;
 	background-color: lightgray;
 }
@@ -149,7 +149,7 @@ main {
 	background-image: url("images/bg-header-desktop.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position-x: left;
+	background-position-x: center;
 	background-position-y: top;
 }
 
@@ -187,7 +187,6 @@ h3 {
 	font-family: var(--heading-font);
 	font-weight: 600;
 	color: var(--dark-grayish-blue);
-
 	font-size: var(--h3-size);
 	margin: 0;
 	width: 100%;
@@ -243,7 +242,7 @@ h3 {
 }
 
 .features-section .section-container .two-column .col-right {
-	margin-left: calc(var(--spacing-xl) * 2);
+	/* margin-left: calc(var(--spacing-xl) * 2); */
 	padding-right: 0;
 }
 
@@ -267,19 +266,19 @@ h3 {
 }
 
 /* SUPERCHARGE CARD SECTION */
-.section-container .card-container {
+.super-section-container .card-container {
 	display: flex;
 	margin: calc(var(--spacing-xl) * 1.5) 0;
 }
 
-.section-container .card-container .card {
+.super-section-container .card-container .card {
 	width: 33%;
 	padding: 0 var(--spacing-md) 0 var(--spacing-md);
 	margin: 0 var(--spacing-md) 0 0;
 	text-align: center;
 }
 
-.section-container .card-container .card .workflow-icon {
+.super-section-container .card-container .card .workflow-icon {
 	margin: 0 0 var(--spacing-lg) 0;
 }
 
@@ -480,14 +479,14 @@ footer .footer-logo {
 
 	/* SUPERCHARGE SECTION */
 
-	.section-container .card-container {
+	.super-section-container .card-container {
 		flex-direction: column;
 		margin: var(--spacing-xl) 0;
 	}
-	.section-container .card-container .card {
+	.super-section-container .card-container .card {
 		width: 100%;
 	}
-	.section-container .image-devices {
+	.super-section-container .image-devices {
 		max-width: 100%;
 		height: auto;
 		margin: var(--spacing-md) 0 var(--spacing-xl) 0;
